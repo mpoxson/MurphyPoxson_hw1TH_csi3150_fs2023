@@ -8,18 +8,23 @@
   </head>
   <body>
     <header id="page_header">
-      <nav id="navbar">
-        <a href="../index.html">Home</a>
-        <a href="./my_fun_facts.html">Fun Facts</a>
-        <a href="./my_resume.html">Resume</a>
-      </nav>
-      <h1>Murphy Poxson - Resume</h1>
-      <h2>12345 Street Dr, Sterling Heights, MI</h2>
-      <h2>mpoxson@oakland.edu, (123)456-7890</h2>
+      <div id="navBarContainer">
+        <nav id="navbar">
+          <a href="../index.html">Home</a>
+          <a href="./my_fun_facts.html">Fun Facts</a>
+          <a href="./my_resume.html">Resume</a>
+        </nav>
+      </div>
+      <div id="headeInfo">
+        <hr />
+        <h1>Murphy Poxson - Resume</h1>
+        <h2>12345 Street Dr, Sterling Heights, MI</h2>
+        <h2>mpoxson@oakland.edu, (123)456-7890</h2>
+      </div>
     </header>
     <hr />
-    <main>
-      <section>
+    <main id="pageMain">
+      <section id="Objective">
         <h3>Objective</h3>
         <p>
           Seeking a fulltime position as a software developer. Looking to
@@ -28,9 +33,9 @@
         </p>
         <hr />
       </section>
-      <section>
+      <section id="professionalExperience">
         <h3>Professional Experience</h3>
-        <article>
+        <article id="job1">
           <h4>
             May 2023 - August 2023, Automation Engineer Intern, Ally Financial,
             Detroit, MI
@@ -41,7 +46,7 @@
             databases hosted in AWS. Review code for merge reviews.
           </p>
         </article>
-        <article>
+        <article id="job2">
           <h4>
             August 2020 - Present, IT Assistant, Oakland University, Rochester,
             MI
@@ -54,7 +59,7 @@
             inventory databases.
           </p>
         </article>
-        <article>
+        <article id="job3">
           <h4>
             May 2018 - March 2020, Supervisor, MJR Digital Cinemas, Clinton
             Township, MI
@@ -66,25 +71,32 @@
             their satisfaction.
           </p>
         </article>
+        <hr />
       </section>
-      <section>
+      <section id="educationalExperience">
         <h3>Educational Experiences</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Start--End</th>
-              <th>Degree</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>September 2020 - May 2024</td>
-              <td>B.S. Computer Science, Oakland University, Rochester, MI</td>
-            </tr>
-          </tbody>
-        </table>
+        <!--Gave table a small border, a heading row, and a small body-->
+        <div id="tableCon">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Start--End</th>
+                <th>Degree</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2020 - 2024</td>
+                <td>
+                  B.S. Computer Science, Oakland University, Rochester, MI
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
-      <section>
+      <hr />
+      <section id="extracurricularActivities">
         <h3>Extracurricular Interests and Hobbies</h3>
         <p>
           I enjoy playing basketball with my friends at the Oakland University
@@ -92,13 +104,18 @@
         </p>
       </section>
     </main>
-    <footer>
+    <footer id="pageFooter">
       <hr />
-      <p>&copy; Murphy's Portfolio Website 2023</p>
       <h2>Contact me!</h2>
+      <!--Links open mail app, try to make a call, and goes to linkedin page-->
       <a href="mailto:mpoxson@oakland.edu">Email</a>
       <a href="tel:+1234567890">Phone</a>
       <a href="http://www.linkedin.com/in/murphy-p-21a457232/">LinkedIn</a>
+      <!--Address tag changes text on screen-->
+      <address>12345 Street Rd, Sterling Heights, Michigan</address>
+      <!--Copyright C code found here: https://blog.hubspot.com/website/html-code-copyright#:~:text=To%20add%20copyright%20symbols%20to,tags%2C%20to%20get%20the%20results.
+        Creates symbol for copyright-->
+      <p>&copy; Murphy's Portfolio Website 2023</p>
     </footer>
   </body>
 </html>
